@@ -7,7 +7,7 @@ const languageButtons = [...document.querySelectorAll("[data-lang]")];
 
 const ui = {
   ko: {
-    title: "숙소 이용 안내 | 공개용",
+    title: "숙소 이용 안내 | 지하1층 공개용",
     searchPlaceholder: "필요한 내용을 검색하세요",
     expand: "전체 펼치기",
     collapse: "전체 접기",
@@ -17,7 +17,7 @@ const ui = {
     homeAria: "숙소 이용 안내 처음으로",
   },
   en: {
-    title: "Guest Guide | Public",
+    title: "Guest Guide | B1 Public",
     searchPlaceholder: "Search this guide",
     expand: "Expand all",
     collapse: "Collapse all",
@@ -27,7 +27,7 @@ const ui = {
     homeAria: "Back to the guest guide top",
   },
   zh: {
-    title: "住宿指南 | 公开版",
+    title: "住宿指南 | 地下1层公开版",
     searchPlaceholder: "搜索需要的信息",
     expand: "全部展开",
     collapse: "全部收起",
@@ -37,7 +37,7 @@ const ui = {
     homeAria: "返回住宿指南顶部",
   },
   ja: {
-    title: "宿泊ガイド | 公開版",
+    title: "宿泊ガイド | 地下1階 公開版",
     searchPlaceholder: "必要な内容を検索",
     expand: "すべて開く",
     collapse: "すべて閉じる",
@@ -58,6 +58,11 @@ const translations = {
     en: "A warm stay near Kang Full Cartoon Street",
     zh: "在姜草漫画街附近度过温暖的一天",
     ja: "カンプル漫画通り近くで過ごす、あたたかな一日",
+  },
+  "지하1층 · 강풀만화거리 근처의 따뜻한 하루": {
+    en: "B1 · A warm stay near Kang Full Cartoon Street",
+    zh: "地下1层 · 在姜草漫画街附近度过温暖的一天",
+    ja: "地下1階 · カンプル漫画通り近くで過ごす、あたたかな一日",
   },
   "Guest Guide · Welcome": {
     en: "Guest Guide · Welcome",
@@ -109,15 +114,10 @@ const translations = {
     zh: "楼内停车场可停1辆车，步行1分钟处也有公共停车场。",
     ja: "建物の駐車場に1台駐車できます。徒歩1分の場所に公共駐車場もあります。",
   },
-  "🛁 온수": {
-    en: "🛁 Hot Water",
-    zh: "🛁 热水",
-    ja: "🛁 お湯",
-  },
-  "보일러를 켜면 보통 2분 안에 온수가 나옵니다.": {
-    en: "After turning on the boiler, hot water usually comes out within 2 minutes.",
-    zh: "打开锅炉后，通常2分钟内会出热水。",
-    ja: "ボイラーをつけると、通常2分以内にお湯が出ます。",
+  "건물 주차는 불가하며, 근처 성내전통시장 공영주차장을 이용해주세요.": {
+    en: "Parking is not available in the building. Please use the nearby Seongnae Traditional Market public parking lot.",
+    zh: "本楼无法停车，请使用附近的城内传统市场公共停车场。",
+    ja: "建物内の駐車はできません。近くの城内伝統市場公共駐車場をご利用ください。",
   },
   "🔑 입·퇴실": {
     en: "🔑 Check-in & Check-out",
@@ -144,6 +144,21 @@ const translations = {
     zh: "楼内停车场可停1辆车。停车场前方道路停车也相对灵活，步行1分钟处还有公共停车场。",
     ja: "建物の駐車場に1台駐車できます。駐車場前の道路も比較的停めやすく、徒歩1分の場所に公共駐車場もあります。",
   },
+  "건물 주차는 불가능합니다. 차량 이용 시 근처 성내전통시장 공영주차장을 이용해주세요.": {
+    en: "Parking is not available in the building. If you are coming by car, please use the nearby Seongnae Traditional Market public parking lot.",
+    zh: "本楼无法停车。如驾车前来，请使用附近的城内传统市场公共停车场。",
+    ja: "建物内の駐車はできません。お車でお越しの場合は、近くの城内伝統市場公共駐車場をご利用ください。",
+  },
+  "공영주차장 지도": {
+    en: "Public Parking Map",
+    zh: "公共停车场地图",
+    ja: "公共駐車場の地図",
+  },
+  "성내전통시장 공영주차장 지도 보기": {
+    en: "View Seongnae Traditional Market Public Parking Map",
+    zh: "查看城内传统市场公共停车场地图",
+    ja: "城内伝統市場公共駐車場の地図を見る",
+  },
   "짐 보관": {
     en: "Luggage Storage",
     zh: "行李寄存",
@@ -164,10 +179,10 @@ const translations = {
     zh: "请查看入住消息",
     ja: "チェックインメッセージをご確認ください",
   },
-  "Wi-Fi 이름과 비밀번호는 체크인 메시지로 별도 안내드립니다. 공유기는 침실 2에 위치해있습니다.": {
-    en: "The Wi-Fi name and password will be shared separately in your check-in message. The router is in Bedroom 2.",
-    zh: "Wi-Fi名称和密码会在入住消息中另行告知。路由器位于卧室2。",
-    ja: "Wi-Fi名とパスワードはチェックインメッセージで別途ご案内します。ルーターは寝室2にあります。",
+  "현재 인터넷이 수리 중입니다. 이용에 불편을 드려 죄송합니다.": {
+    en: "The internet is currently being repaired. We apologize for the inconvenience.",
+    zh: "目前网络正在维修中。给您带来不便，非常抱歉。",
+    ja: "現在インターネットは修理中です。ご不便をおかけして申し訳ありません。",
   },
   "에어컨": {
     en: "Air Conditioner",
@@ -178,6 +193,11 @@ const translations = {
     en: "Air conditioners are located in Bedroom 1 and the living room, and can be operated with the remote controls.",
     zh: "空调位于卧室1和客厅，可使用遥控器操作。",
     ja: "寝室1とリビングにあり、リモコンで操作できます。",
+  },
+  "에어컨은 거실에만 있으며, 리모콘으로 조작 가능합니다. 기본적으로 지하라서 비교적 시원한 편입니다.": {
+    en: "The air conditioner is only in the living room and can be operated with the remote control. Since this unit is in the basement, it is generally fairly cool.",
+    zh: "空调仅在客厅，可使用遥控器操作。由于房源位于地下，通常会比较凉爽。",
+    ja: "エアコンはリビングのみにあり、リモコンで操作できます。地下のお部屋のため、基本的に比較的涼しいです。",
   },
   "보일러": {
     en: "Boiler",
@@ -199,15 +219,40 @@ const translations = {
     zh: "吹风机放在卧室1的床头柜里。",
     ja: "ヘアドライヤーは寝室1のサイドテーブルにあります。",
   },
+  "헤어드라이어는 침실2 화장대 서랍 안에 비치되어 있습니다.": {
+    en: "The hair dryer is inside the vanity drawer in Bedroom 2.",
+    zh: "吹风机放在卧室2梳妆台抽屉内。",
+    ja: "ヘアドライヤーは寝室2の化粧台の引き出しの中にあります。",
+  },
   "세탁기·건조기": {
     en: "Washer & Dryer",
     zh: "洗衣机与烘干机",
     ja: "洗濯機・乾燥機",
   },
+  "세탁기": {
+    en: "Washer",
+    zh: "洗衣机",
+    ja: "洗濯機",
+  },
   "세탁기와 건조기를 사용하실 수 있습니다. 세탁기는 'AI 맞춤세탁' 모드 사용을 권장드립니다.": {
     en: "You may use the washer and dryer. For the washer, we recommend using the 'AI Custom Wash' mode.",
     zh: "您可以使用洗衣机和烘干机。洗衣机建议使用“AI 맞춤세탁”模式。",
     ja: "洗濯機と乾燥機をご利用いただけます。洗濯機は「AI 맞춤세탁」モードの使用をおすすめします。",
+  },
+  "세탁기를 사용하실 수 있습니다. 전원을 누른 뒤 동작 버튼을 누르면 시작됩니다. 모드 설정도 가능하지만, 전원을 켜면 기본적으로 '청정세탁' 모드로 설정됩니다.": {
+    en: "You may use the washer. Press Power, then press Start to begin. You can change the mode, but when powered on it is set to the default 'Clean Wash' mode.",
+    zh: "您可以使用洗衣机。按下电源键后，再按启动键即可开始。也可以设置模式，但开机后默认设置为“清净洗涤”模式。",
+    ja: "洗濯機をご利用いただけます。電源を押してからスタートボタンを押すと開始します。モード設定も可能ですが、電源を入れると基本的に「清浄洗濯」モードに設定されています。",
+  },
+  "제습기": {
+    en: "Dehumidifier",
+    zh: "除湿机",
+    ja: "除湿機",
+  },
+  "제습기는 물통을 비우면 자동으로 동작하게 되어 있습니다.": {
+    en: "The dehumidifier is set to run automatically once the water tank is emptied.",
+    zh: "除湿机在清空水箱后会自动运行。",
+    ja: "除湿機は、水タンクを空にすると自動で作動するようになっています。",
   },
   "🛁 욕실": {
     en: "🛁 Bathroom",
@@ -224,25 +269,20 @@ const translations = {
     zh: "锅炉开启后，2分钟内会出热水。如果没有热水，请确认锅炉是否已开启。",
     ja: "ボイラーをつけている場合、2分以内にお湯が出ます。出ない場合はボイラーが作動しているかご確認ください。",
   },
+  "보일러를 켠 경우, 2분 안에 온수가 나옵니다. 온수가 나오지 않을 경우 보일러 작동 여부를 확인해주세요. (입구 보일러함 내에 있습니다.)": {
+    en: "When the boiler is on, hot water should come out within 2 minutes. If it does not, please check whether the boiler is running. It is inside the boiler cabinet by the entrance.",
+    zh: "锅炉开启后，2分钟内会出热水。如果没有热水，请确认锅炉是否已开启。锅炉位于入口处的锅炉柜内。",
+    ja: "ボイラーをつけている場合、2分以内にお湯が出ます。出ない場合はボイラーが作動しているかご確認ください。入口のボイラー収納内にあります。",
+  },
   "욕실 환풍기": {
     en: "Bathroom Fan",
     zh: "浴室换气扇",
     ja: "浴室換気扇",
   },
-  "욕실 스위치를 켜면 자동으로 작동됩니다. 다만 습도 조절을 위해 창문을 활용하기를 추천드립니다.": {
-    en: "It turns on automatically with the bathroom switch. Opening the window is also recommended to control humidity.",
-    zh: "打开浴室开关后会自动运行。为调节湿度，也建议适当开窗。",
-    ja: "浴室のスイッチを入れると自動で作動します。湿度調整のため、窓もご活用ください。",
-  },
-  "세면대 냉온수 안내": {
-    en: "Sink Hot/Cold Water Note",
-    zh: "洗手池冷热水说明",
-    ja: "洗面台の冷温水について",
-  },
-  "세면대 수전의 냉수와 온수 방향이 일반적인 표시와 반대로 연결되어 있습니다. 물 온도를 천천히 확인하면서 사용해주세요.": {
-    en: "The hot and cold directions on the sink faucet are connected opposite to the usual labels. Please check the water temperature slowly before use.",
-    zh: "洗手池水龙头的冷水和热水方向与一般标识相反。使用时请慢慢确认水温。",
-    ja: "洗面台の水栓は、冷水と温水の向きが通常の表示と逆につながっています。水温をゆっくり確認しながらお使いください。",
+  "욕실 스위치를 켜면 자동으로 작동됩니다.": {
+    en: "It turns on automatically with the bathroom switch.",
+    zh: "打开浴室开关后会自动运行。",
+    ja: "浴室のスイッチを入れると自動で作動します。",
   },
   "세면대 물빠짐 주의사항": {
     en: "Sink Drain Note",
@@ -253,6 +293,16 @@ const translations = {
     en: "Please do not put anything other than toilet paper into the sink, drains, or toilet. Wet wipes and food waste should not be flushed or drained.",
     zh: "请不要将纸巾以外的异物放入洗手池、下水口或马桶。请勿投入湿纸巾和食物。",
     ja: "トイレットペーパー以外の異物を洗面台、排水口、トイレに流さないでください。ウェットティッシュや食べ物は入れないでください。",
+  },
+  "변기 사용 주의사항": {
+    en: "Toilet Use Note",
+    zh: "马桶使用注意事项",
+    ja: "トイレ使用時の注意",
+  },
+  "변기에는 화장지를 비롯해 이물질을 넣지 않도록 특별히 유의 부탁드립니다.": {
+    en: "Please take extra care not to put foreign objects, including toilet paper, into the toilet.",
+    zh: "请特别注意，不要将包括卫生纸在内的异物投入马桶。",
+    ja: "トイレットペーパーを含め、異物をトイレに入れないよう特にご注意ください。",
   },
   "🍽️ 주방": {
     en: "🍽️ Kitchen",
@@ -268,6 +318,11 @@ const translations = {
     en: "Cutlery, bowls, and cooking tools are in the drawers of the lower cabinet under the middle of the kitchen sink. Each drawer is labeled. Plates, wine glasses, and cups are in the upper cabinets.",
     zh: "餐具、碗和厨具放在厨房水槽中间下柜的各个抽屉里。每个抽屉都有标签。盘子、酒杯和杯子等放在上柜。",
     ja: "スプーン、箸、器、調理器具はキッチンシンク中央下の収納引き出しに入っています。各引き出しに名前が貼ってあります。お皿、ワイングラス、カップなどは上部収納にあります。",
+  },
+  "주방 싱크대 가운데 하부장 각 서랍에 수저, 그릇, 조리도구가 들어 있습니다. 접시 및 와인잔, 컵 등은 상부장에 진열되어 있습니다.": {
+    en: "Cutlery, bowls, and cooking tools are in the drawers of the lower cabinet under the middle of the kitchen sink. Plates, wine glasses, and cups are in the upper cabinets.",
+    zh: "餐具、碗和厨具放在厨房水槽中间下柜的各个抽屉里。盘子、酒杯和杯子等放在上柜。",
+    ja: "スプーン、箸、器、調理器具はキッチンシンク中央下の収納引き出しに入っています。お皿、ワイングラス、カップなどは上部収納にあります。",
   },
   "냉장고": {
     en: "Refrigerator",
@@ -294,6 +349,11 @@ const translations = {
     zh: "水槽右侧下柜内有可密封的厨余垃圾桶。请不要将食物残渣倒入水槽，以免堵塞管道。",
     ja: "シンク右側の下部収納に密閉できる生ごみ用ごみ箱があります。配管詰まり防止のため、食べ物をシンクに流さないでください。",
   },
+  "상부장 오른쪽에 밀폐가 가능한 음식물쓰레기통이 있습니다. 싱크대에 음식물을 흘려버려 배관이 막히지 않도록 유의 부탁드립니다.": {
+    en: "There is a sealable food waste bin in the right side of the upper cabinet. Please do not wash food scraps down the sink, as this may clog the pipes.",
+    zh: "右侧上柜内有可密封的厨余垃圾桶。请不要将食物残渣倒入水槽，以免堵塞管道。",
+    ja: "上部収納の右側に密閉できる生ごみ用ごみ箱があります。配管詰まり防止のため、食べ物をシンクに流さないでください。",
+  },
   "♻️ 분리수거 & 쓰레기": {
     en: "♻️ Recycling & Trash",
     zh: "♻️ 垃圾分类与处理",
@@ -319,6 +379,11 @@ const translations = {
     zh: "如长住期间需要自行丢垃圾，请另行咨询用于一般垃圾和厨余垃圾的专用垃圾袋。可回收垃圾以及装入专用袋的一般垃圾、厨余垃圾，请投放至1楼“담아내다덮밥”旁边区域。",
     ja: "長期滞在中にご自身でごみ出しが必要な場合は、一般ごみ・生ごみ用の指定ごみ袋について別途お問い合わせください。リサイクルごみと指定袋に入れた一般ごみ・生ごみは、1階「담아내다덮밥」横のスペースに出します。",
   },
+  "직접 쓰레기 배출이 필요하신 경우 일반쓰레기와 음식물쓰레기를 배출하기 위한 종량제 봉투를 별도 문의해주세요. 재활용쓰레기와 종량제봉투에 담긴 일반쓰레기 및 음식물쓰레기는 건물 입구 왼쪽에 배출합니다.": {
+    en: "If you need to take out trash during a longer stay, please ask separately for official bags for general and food waste. Recyclables and bagged general/food waste should be placed on the left side of the building entrance.",
+    zh: "如长住期间需要自行丢垃圾，请另行咨询用于一般垃圾和厨余垃圾的专用垃圾袋。可回收垃圾以及装入专用袋的一般垃圾、厨余垃圾，请投放至建筑入口左侧。",
+    ja: "長期滞在中にご自身でごみ出しが必要な場合は、一般ごみ・生ごみ用の指定ごみ袋について別途お問い合わせください。リサイクルごみと指定袋に入れた一般ごみ・生ごみは、建物入口の左側に出してください。",
+  },
   "🧯 비상·안전": {
     en: "🧯 Emergency & Safety",
     zh: "🧯 紧急与安全",
@@ -334,15 +399,35 @@ const translations = {
     zh: "灭火器",
     ja: "消火器",
   },
+  "입구 안내": {
+    en: "Entrance Guide",
+    zh: "入口说明",
+    ja: "入口案内",
+  },
+  "입구에 들어서면 왼쪽에는 보일러 및 소화기함, 오른쪽에는 신발장이 있습니다.": {
+    en: "When you enter, the boiler and fire extinguisher cabinet are on the left, and the shoe cabinet is on the right.",
+    zh: "进入入口后，左侧是锅炉和灭火器柜，右侧是鞋柜。",
+    ja: "入口に入ると、左側にボイラーと消火器収納、右側に靴箱があります。",
+  },
   "입구 계단 아래에 위치해 있으며, 각 방과 거실에는 화재경보기가 설치되어 있습니다.": {
     en: "It is located under the entrance stairs. Fire alarms are installed in each room and the living room.",
     zh: "位于入口楼梯下方。各房间和客厅都安装有火灾警报器。",
     ja: "入口階段の下にあります。各部屋とリビングには火災報知器が設置されています。",
   },
-  "누전차단기": {
-    en: "Circuit Breaker",
-    zh: "漏电断路器",
-    ja: "漏電遮断器",
+  "소화기는 입구 왼쪽 장 안에 비치되어 있으며, 각 방과 거실에는 화재경보기가 설치되어 있습니다.": {
+    en: "The fire extinguisher is inside the cabinet on the left side of the entrance. Fire alarms are installed in each room and the living room.",
+    zh: "灭火器放在入口左侧柜子内。各房间和客厅都安装有火灾警报器。",
+    ja: "消火器は入口左側の収納内にあります。各部屋とリビングには火災報知器が設置されています。",
+  },
+  "실내화": {
+    en: "Indoor Slippers",
+    zh: "室内拖鞋",
+    ja: "室内スリッパ",
+  },
+  "신발장에는 실내화가 비치되어 있습니다. 실내에서는 실내화 이용을 부탁드립니다.": {
+    en: "Indoor slippers are provided in the shoe cabinet. Please use the slippers indoors.",
+    zh: "鞋柜内备有室内拖鞋。请在室内使用拖鞋。",
+    ja: "靴箱に室内スリッパをご用意しています。室内ではスリッパをご利用ください。",
   },
   "신발장 옆 우드장 왼쪽 문을 열면 위쪽 칸 안쪽에 위치해 있습니다. 필요시에만 작동해주세요.": {
     en: "Open the left door of the wooden cabinet next to the shoe cabinet. It is inside the upper compartment. Please use it only when necessary.",
@@ -358,16 +443,6 @@ const translations = {
     en: "It is located next to the gas stove.",
     zh: "位于燃气灶旁边。",
     ja: "ガスコンロの横にあります。",
-  },
-  "복층 출입 금지": {
-    en: "No Access to Loft/Rooftop",
-    zh: "禁止进入阁楼与屋顶",
-    ja: "ロフト・屋上立入禁止",
-  },
-  "복층 옥탑방 및 옥상은 현재 사용하지 않는 공간입니다. 안전을 위해 출입을 금하며, 계단 및 복층 이용으로 인한 사고는 숙소에서 책임지지 않습니다.": {
-    en: "The loft rooftop room and rooftop are not in use. For safety, entry is prohibited. The accommodation is not responsible for accidents caused by using the stairs or loft area.",
-    zh: "阁楼屋塔房及屋顶目前不开放使用。为安全起见禁止进入，因使用楼梯或阁楼造成的事故，住宿方不承担责任。",
-    ja: "ロフト屋上部屋および屋上は現在使用していないスペースです。安全のため立入禁止です。階段およびロフト利用による事故について、宿泊施設では責任を負いかねます。",
   },
   "🧺 소모품 & 비품": {
     en: "🧺 Supplies & Amenities",
