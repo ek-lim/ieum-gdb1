@@ -215,11 +215,11 @@ const translations = {
     ja: "チェックインメッセージをご確認ください",
     es: "Por favor revisa el mensaje de check-in",
   },
-  "현재 인터넷이 수리 중입니다. 이용에 불편을 드려 죄송합니다.": {
-    en: "The internet is currently being repaired. We apologize for the inconvenience.",
-    zh: "目前网络正在维修中。给您带来不便，非常抱歉。",
-    ja: "現在インターネットは修理中です。ご不便をおかけして申し訳ありません。",
-    es: "El internet está actualmente en reparación. Disculpa las molestias.",
+  "Wi-Fi 정보는 체크인 메시지로 별도 전달드립니다.": {
+    en: "Wi-Fi information will be shared separately in your check-in message.",
+    zh: "Wi-Fi信息会在入住消息中另行提供。",
+    ja: "Wi-Fi情報はチェックインメッセージで別途お伝えします。",
+    es: "La información de Wi-Fi se enviará por separado en el mensaje de check-in.",
   },
   "에어컨": {
     en: "Air Conditioner",
@@ -245,11 +245,11 @@ const translations = {
     ja: "ボイラー",
     es: "Caldera",
   },
-  "안방에 있는 중앙 조절 장치로 조작되며, 온수 사용시 필히 작동해야 합니다.": {
-    en: "It is controlled by the central controller in the main bedroom. Please turn it on when using hot water.",
-    zh: "通过主卧内的中央控制器操作。使用热水时请务必开启。",
-    ja: "主寝室にある中央コントローラーで操作します。お湯を使う時は必ず作動させてください。",
-    es: "Se controla desde el panel central del dormitorio principal. Debe estar encendida para usar agua caliente.",
+  "보일러는 입구 왼쪽 소화전 안쪽에 있으며, 기본적으로 항상 작동 중입니다. 안전을 위해 직접 조작하지 않기를 권장드립니다.": {
+    en: "The boiler is inside the fire hydrant cabinet on the left side of the entrance, and it normally stays on. For safety, we recommend that guests do not operate it directly.",
+    zh: "锅炉位于入口左侧消防栓柜内，通常会保持运行。为了安全起见，建议客人不要自行操作。",
+    ja: "ボイラーは入口左側の消火栓の内側にあり、基本的に常時作動しています。安全のため、直接操作しないことをおすすめします。",
+    es: "La caldera está dentro del gabinete del hidrante contra incendios, a la izquierda de la entrada, y normalmente permanece encendida. Por seguridad, recomendamos no manipularla directamente.",
   },
   "헤어드라이어": {
     en: "Hair Dryer",
@@ -466,16 +466,11 @@ const translations = {
     ja: "お湯が出るまでの時間",
     es: "Tiempo para que salga agua caliente",
   },
-  "보일러를 켠 경우, 2분 안에 온수가 나옵니다. 온수가 나오지 않을 경우 보일러 작동 여부를 확인해주세요.": {
-    en: "When the boiler is on, hot water should come out within 2 minutes. If it does not, please check whether the boiler is running.",
-    zh: "锅炉开启后，2分钟内会出热水。如果没有热水，请确认锅炉是否已开启。",
-    ja: "ボイラーをつけている場合、2分以内にお湯が出ます。出ない場合はボイラーが作動しているかご確認ください。",
-  },
-  "보일러를 켠 경우, 2분 안에 온수가 나옵니다. 온수가 나오지 않을 경우 보일러 작동 여부를 확인해주세요. (입구 보일러함 내에 있습니다.)": {
-    en: "When the boiler is on, hot water should come out within 2 minutes. If it does not, please check whether the boiler is running. It is inside the boiler cabinet by the entrance.",
-    zh: "锅炉开启后，2分钟内会出热水。如果没有热水，请确认锅炉是否已开启。锅炉位于入口处的锅炉柜内。",
-    ja: "ボイラーをつけている場合、2分以内にお湯が出ます。出ない場合はボイラーが作動しているかご確認ください。入口のボイラー収納内にあります。",
-    es: "Si la caldera está encendida, el agua caliente sale en menos de 2 minutos. Si no sale agua caliente, revisa si la caldera está funcionando. (Está dentro del gabinete de la caldera en la entrada).",
+  "보일러는 기본적으로 항상 작동 중이며, 보통 2분 안에 온수가 나옵니다. 온수가 나오지 않을 경우 직접 조작하지 마시고 호스트에게 문의해주세요.": {
+    en: "The boiler normally stays on, and hot water usually comes out within about 2 minutes. If hot water does not come out, please do not operate the boiler yourself and contact the host.",
+    zh: "锅炉通常会保持运行，一般约2分钟内会出热水。如果没有热水，请不要自行操作锅炉，并联系房东。",
+    ja: "ボイラーは基本的に常時作動しており、通常2分ほどでお湯が出ます。お湯が出ない場合はご自身で操作せず、ホストへお問い合わせください。",
+    es: "La caldera normalmente permanece encendida y el agua caliente suele salir en unos 2 minutos. Si no sale agua caliente, no manipules la caldera y contacta al anfitrión.",
   },
   "욕실 환풍기": {
     en: "Bathroom Fan",
@@ -681,11 +676,11 @@ const translations = {
     ja: "入口案内",
     es: "Entrada",
   },
-  "입구에 들어서면 왼쪽에는 보일러 및 소화기함, 오른쪽에는 신발장이 있습니다.": {
-    en: "When you enter, the boiler and fire extinguisher cabinet are on the left, and the shoe cabinet is on the right.",
-    zh: "进入入口后，左侧是锅炉和灭火器柜，右侧是鞋柜。",
-    ja: "入口に入ると、左側にボイラーと消火器収納、右側に靴箱があります。",
-    es: "Al entrar, a la izquierda están la caldera y el gabinete del extintor; a la derecha está el zapatero.",
+  "입구에 들어서면 왼쪽에는 소화전과 소화기함, 오른쪽에는 신발장이 있습니다. 보일러는 소화전 안쪽에 있습니다.": {
+    en: "When you enter, the fire hydrant and fire extinguisher cabinet are on the left, and the shoe cabinet is on the right. The boiler is inside the fire hydrant cabinet.",
+    zh: "进入入口后，左侧是消防栓和灭火器柜，右侧是鞋柜。锅炉位于消防栓柜内。",
+    ja: "入口に入ると、左側に消火栓と消火器収納、右側に靴箱があります。ボイラーは消火栓の内側にあります。",
+    es: "Al entrar, a la izquierda están el hidrante contra incendios y el gabinete del extintor; a la derecha está el zapatero. La caldera está dentro del gabinete del hidrante.",
   },
   "입구 계단 아래에 위치해 있으며, 각 방과 거실에는 화재경보기가 설치되어 있습니다.": {
     en: "It is located under the entrance stairs. Fire alarms are installed in each room and the living room.",
